@@ -333,7 +333,7 @@ background: white; border-radius: 15px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);
         <!-- Balon Patlatma Oyunu -->
         <div id="balloon-game" style="display: none;">
             <div class="game-header">
-                <h2>🎈 Balon Patlatma Oyunu (Güncellenicek)</h2>
+                <h2>🎈 Balon Patlatma Oyunu </h2>
                 <div class="game-score">Skor: <span id="score">0</span></div>
                 <button id="close-game">❌</button>
             </div>
@@ -346,7 +346,7 @@ background: white; border-radius: 15px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);
         <div id="candle-game" style="display: none;">
             <div class="candle-header">
                 <h2>🕯️ Mum Üfleme Oyunu</h2>
-                <p>Mikrofonunuza üfleyin ve mumları söndürün!</p>
+                <p>Mikrofonunuza üfleyip mumları söndürebilir misiniz Helin Hanım?</p>
                 <button id="close-candles">❌</button>
             </div>
             <div class="candle-area">
@@ -841,7 +841,7 @@ background: white; border-radius: 15px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);
             // Ses seviyesini sürekli kontrol et
             monitorBlowing();
         } catch (err) {
-            alert('Mikrofon erişimi gerekli! Lütfen mikrofon iznini verin.');
+            alert('Helin Hanım mikrofon erişimi gerekli! Lütfen mikrofon iznini verin.');
             console.error('Mikrofon erişimi hatası:', err);
         }
     }
@@ -1040,7 +1040,7 @@ nextBtn.addEventListener('click', () => {
   const formData = new FormData(form);
   const selected = formData.get('answer');
   if (selected === null) {
-    alert('Lütfen bir seçenek işaretleyin.');
+    alert('Helin Hanım lütfen bir seçenek işaretleyin.');
     return;
   }
   answers[currentQuestionIndex] = parseInt(selected);
