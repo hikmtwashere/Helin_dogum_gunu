@@ -923,51 +923,51 @@ const closeBtn = document.getElementById('test-close-btn');
 
 const questions = [
   {
-    q: "Doğum gününü nasıl kutlamayı tercih edersin?",
+    q: "Bana kızdığında genelde ne yaparsın?",
     options: [
-      { text: "Arkadaşlarımla büyük bir parti", score: 3 },
-      { text: "Sevdiklerimle sakin bir yemek", score: 2 },
-      { text: "Kendimle yalnız vakit geçirmek", score: 1 }
+      { text: "Günün yarısını zehir ederim 👉👈", score: 3 },
+      { text: "Trip atarım ama nedenini hemen söylemem", score: 2 },
+      { text: "Hiç kızmam ki ben sana 🥺", score: 1 }
     ]
   },
   {
-    q: "Sevgiline en çok neyi değer verirsin?",
+    q: "Benim en çok hangi davranışımı seviyorsun?",
     options: [
-      { text: "Dürüstlük ve sadakat", score: 3 },
-      { text: "Romantiklik ve sürprizler", score: 2 },
-      { text: "Özgürlük ve anlayış", score: 1 }
+      { text: "Eril olmam", score: 3 },
+      { text: "Komik olmam", score: 2 },
+      { text: "Olgun olmam", score: 1 }
     ]
   },
   {
-    q: "İlişkide seni en çok ne mutlu eder?",
+    q: " İlişkimiz bir film türü olsa hangisi olurdu?",
     options: [
-      { text: "Beraber yapılan yeni aktiviteler", score: 3 },
-      { text: "Güzel sohbet ve samimiyet", score: 2 },
-      { text: "Birlikte sessiz zaman geçirmek", score: 1 }
+      { text: "Sitcom", score: 3 },
+      { text: "Dram", score: 2 },
+      { text: "Macera", score: 1 }
     ]
   },
   {
-    q: "Bir doğum günü hediyesi seçerken nasıl davranırsın?",
+    q: " Birlikte olduğumuzda en çok hangisi seni mutlu ediyor?",
     options: [
-      { text: "Özenle plan yapar ve büyük bir sürpriz yaparım", score: 3 },
-      { text: "Küçük ama anlamlı hediyeler tercih ederim", score: 2 },
-      { text: "Anı yaşarım, hediyeden çok önemli değil", score: 1 }
+      { text: "Yapacağın şakayı daha sen söylemeden tahmin etmem", score: 3 },
+      { text: "Koruyucu kollayıcı hissettirme", score: 2 },
+      { text: "Saçma sapan şeylere bile birlikte gülmemiz", score: 1 }
     ]
   },
   {
-    q: "İlişkide en çok hangi konuda zorluk yaşarsın?",
+    q: "Bir tartışmada haklı kim olur?",
     options: [
-      { text: "Zaman ayırmak ve iletişim", score: 3 },
-      { text: "Güven ve kıskançlık", score: 2 },
-      { text: "Farklı ilgi alanları ve beklentiler", score: 1 }
+      { text: "Ben olurum, çünkü ben her zaman haklıyım!", score: 3 },
+      { text: "Ara sıra karşı tarafta haklıdır.", score: 2 },
+      { text: "Mantıklı olan taraf", score: 1 }
     ]
   },
   {
-    q: "En çok ne zaman kendini özel hissedersin?",
+    q: "Bizim için en bereketli hava durumu :)",
     options: [
-      { text: "Sevdiğim insan yanımdayken", score: 3 },
-      { text: "Sürpriz ve güzel anlarda", score: 2 },
-      { text: "Kendi başıma başarılarım olduğunda", score: 1 }
+      { text: "Yağmurlu", score: 3 },
+      { text: "Güneşli", score: 2 },
+      { text: "Karlı ?", score: 1 }
     ]
   }
 ];
@@ -1002,11 +1002,11 @@ function showResult() {
 
   let message = '';
   if (totalScore >= 16) {
-    message = 'Helin, sen çok tutkulu, sevgi dolu ve romantik bir kişisin! İlişkinizde harika anılar biriktireceksiniz.';
+    message = 'Birbirimiz aşırı derecede tamamladığımızı bir kere daha kanıtladın. Doğum günü kutlu olsun fıstığım.';
   } else if (totalScore >= 11) {
-    message = 'Sen dengeli ve anlayışlı birisin, sevginiz sıcak ve samimi bir bağa dayanıyor.';
+    message = '187 mühendis oğlanına sonunda kavuştun. Bende 172 fıstığa :) Doğum günün kutlu olsun.';
   } else {
-    message = 'Sen bağımsız, özgür ruhlu ve kendi yolunu çizen birisin. Sevginiz farklı ama güçlü.';
+    message = 'Yaaani en iyi performansın değil bu testte. Bence bilerek yanlış olanları işaretledin 😮';
   }
 
   questionContainer.innerHTML = `
